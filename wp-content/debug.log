@@ -1,0 +1,164 @@
+[23-Dec-2024 14:53:43 UTC] Automatic updates starting...
+[23-Dec-2024 14:53:44 UTC] Automatic updates complete.
+[26-Dec-2024 13:29:12 UTC] Automatic updates starting...
+[26-Dec-2024 13:29:13 UTC] Automatic updates complete.
+[27-Dec-2024 13:06:41 UTC] Automatic updates starting...
+[27-Dec-2024 13:06:42 UTC] Automatic updates complete.
+[27-Dec-2024 16:10:32 UTC] PHP Warning:  Undefined variable $video_url in C:\wamp64\www\Koukaki\wp-content\themes\foce-child\front-page.php on line 12
+[27-Dec-2024 16:10:32 UTC] PHP Stack trace:
+[27-Dec-2024 16:10:32 UTC] PHP   1. {main}() C:\wamp64\www\Koukaki\index.php:0
+[27-Dec-2024 16:10:32 UTC] PHP   2. require() C:\wamp64\www\Koukaki\index.php:17
+[27-Dec-2024 16:10:32 UTC] PHP   3. require_once() C:\wamp64\www\Koukaki\wp-blog-header.php:19
+[27-Dec-2024 16:10:32 UTC] PHP   4. include() C:\wamp64\www\Koukaki\wp-includes\template-loader.php:106
+[27-Dec-2024 16:10:32 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\wamp64\www\Koukaki\wp-includes\formatting.php on line 4467
+[27-Dec-2024 16:10:32 UTC] PHP Stack trace:
+[27-Dec-2024 16:10:32 UTC] PHP   1. {main}() C:\wamp64\www\Koukaki\index.php:0
+[27-Dec-2024 16:10:32 UTC] PHP   2. require() C:\wamp64\www\Koukaki\index.php:17
+[27-Dec-2024 16:10:32 UTC] PHP   3. require_once() C:\wamp64\www\Koukaki\wp-blog-header.php:19
+[27-Dec-2024 16:10:32 UTC] PHP   4. include() C:\wamp64\www\Koukaki\wp-includes\template-loader.php:106
+[27-Dec-2024 16:10:32 UTC] PHP   5. esc_url($url = NULL, $protocols = *uninitialized*, $_context = *uninitialized*) C:\wamp64\www\Koukaki\wp-content\themes\foce-child\front-page.php:12
+[27-Dec-2024 16:10:32 UTC] PHP   6. ltrim($string = NULL) C:\wamp64\www\Koukaki\wp-includes\formatting.php:4467
+[28-Dec-2024 17:26:17 UTC] Automatic updates starting...
+[28-Dec-2024 17:26:18 UTC] Automatic updates complete.
+[29-Dec-2024 17:38:35 UTC] Automatic updates starting...
+[29-Dec-2024 17:38:37 UTC] Automatic updates complete.
+[30-Dec-2024 13:59:32 UTC] Automatic updates starting...
+[30-Dec-2024 13:59:33 UTC] Automatic updates complete.
+[01-Jan-2025 18:06:46 UTC] Automatic updates starting...
+[01-Jan-2025 18:06:48 UTC] Automatic updates complete.
+[02-Jan-2025 14:17:16 UTC] Automatic updates starting...
+[02-Jan-2025 14:17:17 UTC] Automatic updates complete.
+[03-Jan-2025 12:35:03 UTC] Automatic updates starting...
+[03-Jan-2025 12:35:04 UTC] Automatic updates complete.
+[03-Jan-2025 12:52:49 UTC] Automatic updates starting...
+[03-Jan-2025 12:52:49 UTC] Automatic updates complete.
+[03-Jan-2025 18:04:28 UTC] PHP Fatal error:  Cannot redeclare enqueue_custom_scripts() (previously declared in C:\wamp64\www\Koukaki\wp-content\themes\foce-child\functions.php:82) in C:\wamp64\www\Koukaki\wp-content\themes\foce-child\functions.php on line 92
+[03-Jan-2025 18:04:28 UTC] PHP Stack trace:
+[03-Jan-2025 18:04:28 UTC] PHP   1. {main}() C:\wamp64\www\Koukaki\index.php:0
+[03-Jan-2025 18:04:28 UTC] PHP   2. require() C:\wamp64\www\Koukaki\index.php:17
+[03-Jan-2025 18:04:28 UTC] PHP   3. require_once() C:\wamp64\www\Koukaki\wp-blog-header.php:13
+[03-Jan-2025 18:04:28 UTC] PHP   4. require_once() C:\wamp64\www\Koukaki\wp-load.php:50
+[03-Jan-2025 18:04:28 UTC] PHP   5. require_once() C:\wamp64\www\Koukaki\wp-config.php:108
+[04-Jan-2025 17:33:49 UTC] Automatic updates starting...
+[04-Jan-2025 17:33:51 UTC] Automatic updates complete.
+[05-Jan-2025 16:17:00 UTC] Automatic updates starting...
+[05-Jan-2025 16:17:02 UTC] Automatic updates complete.
+[06-Jan-2025 11:42:20 UTC] Automatic updates starting...
+[06-Jan-2025 11:42:21 UTC] Automatic updates complete.
+[06-Jan-2025 12:57:23 UTC] Automatic updates starting...
+[06-Jan-2025 12:57:23 UTC] Automatic updates complete.
+[07-Jan-2025 11:46:22 UTC] Automatic updates starting...
+[07-Jan-2025 11:46:23 UTC] Automatic updates complete.
+[07-Jan-2025 12:53:40 UTC] Automatic updates starting...
+[07-Jan-2025 12:53:40 UTC] Automatic updates complete.
+[10-Jan-2025 15:41:32 UTC] Automatic updates starting...
+[10-Jan-2025 15:41:34 UTC] Automatic updates complete.
+[11-Jan-2025 13:45:05 UTC] Automatic updates starting...
+[11-Jan-2025 13:45:06 UTC] Automatic updates complete.
+[12-Jan-2025 14:27:43 UTC] Automatic updates starting...
+[12-Jan-2025 14:27:44 UTC] Automatic updates complete.
+[13-Jan-2025 09:40:01 UTC] Automatic updates starting...
+[13-Jan-2025 09:40:02 UTC] Automatic updates complete.
+[13-Jan-2025 14:04:50 UTC] Automatic updates starting...
+[13-Jan-2025 14:04:50 UTC]   Automatic plugin updates starting...
+[13-Jan-2025 14:04:50 UTC]   Automatic plugin updates complete.
+[13-Jan-2025 14:04:51 UTC] Automatic updates complete.
+[14-Jan-2025 10:02:19 UTC] Automatic updates starting...
+[14-Jan-2025 10:02:19 UTC]   Automatic plugin updates starting...
+[14-Jan-2025 10:02:19 UTC]   Automatic plugin updates complete.
+[14-Jan-2025 10:02:20 UTC] Automatic updates complete.
+[14-Jan-2025 13:47:10 UTC] Automatic updates starting...
+[14-Jan-2025 13:47:10 UTC]   Automatic plugin updates starting...
+[14-Jan-2025 13:47:10 UTC]   Automatic plugin updates complete.
+[14-Jan-2025 13:47:11 UTC] Automatic updates complete.
+[14-Jan-2025 19:34:53 UTC] PHP Warning:  Undefined variable $characters_query in C:\wamp64\www\Koukaki\wp-content\themes\foce-child\template-parts\template-carousel.php on line 6
+[14-Jan-2025 19:34:53 UTC] PHP Stack trace:
+[14-Jan-2025 19:34:53 UTC] PHP   1. {main}() C:\wamp64\www\Koukaki\index.php:0
+[14-Jan-2025 19:34:53 UTC] PHP   2. require() C:\wamp64\www\Koukaki\index.php:17
+[14-Jan-2025 19:34:53 UTC] PHP   3. require_once() C:\wamp64\www\Koukaki\wp-blog-header.php:19
+[14-Jan-2025 19:34:53 UTC] PHP   4. include() C:\wamp64\www\Koukaki\wp-includes\template-loader.php:106
+[14-Jan-2025 19:34:53 UTC] PHP   5. get_template_part($slug = 'template-parts/template-carousel', $name = *uninitialized*, $args = *uninitialized*) C:\wamp64\www\Koukaki\wp-content\themes\foce-child\front-page.php:40
+[14-Jan-2025 19:34:53 UTC] PHP   6. locate_template($template_names = [0 => 'template-parts/template-carousel.php'], $load = TRUE, $load_once = FALSE, $args = []) C:\wamp64\www\Koukaki\wp-includes\general-template.php:206
+[14-Jan-2025 19:34:53 UTC] PHP   7. load_template($_template_file = 'C:\\wamp64\\www\\Koukaki/wp-content/themes/foce-child/template-parts/template-carousel.php', $load_once = FALSE, $args = []) C:\wamp64\www\Koukaki\wp-includes\template.php:745
+[14-Jan-2025 19:34:53 UTC] PHP   8. require() C:\wamp64\www\Koukaki\wp-includes\template.php:812
+[14-Jan-2025 19:34:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function have_posts() on null in C:\wamp64\www\Koukaki\wp-content\themes\foce-child\template-parts\template-carousel.php:6
+Stack trace:
+#0 C:\wamp64\www\Koukaki\wp-includes\template.php(812): require()
+#1 C:\wamp64\www\Koukaki\wp-includes\template.php(745): load_template('C:\\wamp64\\www\\K...', false, Array)
+#2 C:\wamp64\www\Koukaki\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#3 C:\wamp64\www\Koukaki\wp-content\themes\foce-child\front-page.php(40): get_template_part('template-parts/...')
+#4 C:\wamp64\www\Koukaki\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\K...')
+#5 C:\wamp64\www\Koukaki\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\K...')
+#6 C:\wamp64\www\Koukaki\index.php(17): require('C:\\wamp64\\www\\K...')
+#7 {main}
+  thrown in C:\wamp64\www\Koukaki\wp-content\themes\foce-child\template-parts\template-carousel.php on line 6
+[14-Jan-2025 19:50:19 UTC] PHP Warning:  Undefined variable $characters_query in C:\wamp64\www\Koukaki\wp-content\themes\foce-child\template-carousel.php on line 6
+[14-Jan-2025 19:50:19 UTC] PHP Stack trace:
+[14-Jan-2025 19:50:19 UTC] PHP   1. {main}() C:\wamp64\www\Koukaki\index.php:0
+[14-Jan-2025 19:50:19 UTC] PHP   2. require() C:\wamp64\www\Koukaki\index.php:17
+[14-Jan-2025 19:50:19 UTC] PHP   3. require_once() C:\wamp64\www\Koukaki\wp-blog-header.php:19
+[14-Jan-2025 19:50:19 UTC] PHP   4. include() C:\wamp64\www\Koukaki\wp-includes\template-loader.php:106
+[14-Jan-2025 19:50:19 UTC] PHP   5. get_template_part($slug = 'template-carousel', $name = *uninitialized*, $args = *uninitialized*) C:\wamp64\www\Koukaki\wp-content\themes\foce-child\front-page.php:40
+[14-Jan-2025 19:50:19 UTC] PHP   6. locate_template($template_names = [0 => 'template-carousel.php'], $load = TRUE, $load_once = FALSE, $args = []) C:\wamp64\www\Koukaki\wp-includes\general-template.php:206
+[14-Jan-2025 19:50:19 UTC] PHP   7. load_template($_template_file = 'C:\\wamp64\\www\\Koukaki/wp-content/themes/foce-child/template-carousel.php', $load_once = FALSE, $args = []) C:\wamp64\www\Koukaki\wp-includes\template.php:745
+[14-Jan-2025 19:50:19 UTC] PHP   8. require() C:\wamp64\www\Koukaki\wp-includes\template.php:812
+[14-Jan-2025 19:50:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function have_posts() on null in C:\wamp64\www\Koukaki\wp-content\themes\foce-child\template-carousel.php:6
+Stack trace:
+#0 C:\wamp64\www\Koukaki\wp-includes\template.php(812): require()
+#1 C:\wamp64\www\Koukaki\wp-includes\template.php(745): load_template('C:\\wamp64\\www\\K...', false, Array)
+#2 C:\wamp64\www\Koukaki\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#3 C:\wamp64\www\Koukaki\wp-content\themes\foce-child\front-page.php(40): get_template_part('template-carous...')
+#4 C:\wamp64\www\Koukaki\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\K...')
+#5 C:\wamp64\www\Koukaki\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\K...')
+#6 C:\wamp64\www\Koukaki\index.php(17): require('C:\\wamp64\\www\\K...')
+#7 {main}
+  thrown in C:\wamp64\www\Koukaki\wp-content\themes\foce-child\template-carousel.php on line 6
+[15-Jan-2025 11:12:08 UTC] Automatic updates starting...
+[15-Jan-2025 11:12:09 UTC]   Automatic plugin updates starting...
+[15-Jan-2025 11:12:09 UTC]   Automatic plugin updates complete.
+[15-Jan-2025 11:12:09 UTC] Automatic updates complete.
+[15-Jan-2025 13:02:00 UTC] Automatic updates starting...
+[15-Jan-2025 13:02:01 UTC]   Automatic plugin updates starting...
+[15-Jan-2025 13:02:01 UTC]   Automatic plugin updates complete.
+[15-Jan-2025 13:02:01 UTC] Automatic updates complete.
+[15-Jan-2025 15:36:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function have_posts() on string in C:\wamp64\www\Koukaki\wp-content\themes\foce-child\template-parts\carousel.php:4
+Stack trace:
+#0 C:\wamp64\www\Koukaki\wp-includes\template.php(812): require()
+#1 C:\wamp64\www\Koukaki\wp-includes\template.php(745): load_template('C:\\wamp64\\www\\K...', false, Array)
+#2 C:\wamp64\www\Koukaki\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#3 C:\wamp64\www\Koukaki\wp-content\themes\foce-child\front-page.php(42): get_template_part('template-parts/...')
+#4 C:\wamp64\www\Koukaki\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\K...')
+#5 C:\wamp64\www\Koukaki\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\K...')
+#6 C:\wamp64\www\Koukaki\index.php(17): require('C:\\wamp64\\www\\K...')
+#7 {main}
+  thrown in C:\wamp64\www\Koukaki\wp-content\themes\foce-child\template-parts\carousel.php on line 4
+[19-Jan-2025 18:00:10 UTC] Automatic updates starting...
+[19-Jan-2025 18:00:10 UTC]   Automatic plugin updates starting...
+[19-Jan-2025 18:00:10 UTC]   Automatic plugin updates complete.
+[19-Jan-2025 18:00:11 UTC] Automatic updates complete.
+[20-Jan-2025 13:54:47 UTC] Automatic updates starting...
+[20-Jan-2025 13:54:48 UTC]   Automatic plugin updates starting...
+[20-Jan-2025 13:54:48 UTC]   Automatic plugin updates complete.
+[20-Jan-2025 13:54:49 UTC] Automatic updates complete.
+[28-Jan-2025 15:29:52 UTC] Automatic updates starting...
+[28-Jan-2025 15:29:52 UTC]   Automatic plugin updates starting...
+[28-Jan-2025 15:29:53 UTC]   Automatic plugin updates complete.
+[28-Jan-2025 15:29:53 UTC] Automatic updates complete.
+[27-Mar-2025 16:25:06 UTC] Automatic updates starting...
+[27-Mar-2025 16:25:07 UTC]   Automatic plugin updates starting...
+[27-Mar-2025 16:25:07 UTC]   Automatic plugin updates complete.
+[27-Mar-2025 16:25:08 UTC]   Automatic theme updates starting...
+[27-Mar-2025 16:25:08 UTC]   Automatic theme updates complete.
+[27-Mar-2025 16:25:08 UTC] Automatic updates complete.
+[26-Aug-2025 17:03:20 UTC] Automatic updates starting...
+[26-Aug-2025 17:03:21 UTC]   Automatic plugin updates starting...
+[26-Aug-2025 17:03:21 UTC]   Automatic plugin updates complete.
+[26-Aug-2025 17:03:26 UTC]   Automatic theme updates starting...
+[26-Aug-2025 17:03:26 UTC]   Automatic theme updates complete.
+[26-Aug-2025 17:03:26 UTC] Automatic updates complete.
+[02-Sep-2025 14:17:04 UTC] Automatic updates starting...
+[02-Sep-2025 14:17:05 UTC]   Automatic plugin updates starting...
+[02-Sep-2025 14:17:05 UTC]   Automatic plugin updates complete.
+[02-Sep-2025 14:17:06 UTC]   Automatic theme updates starting...
+[02-Sep-2025 14:17:06 UTC]   Automatic theme updates complete.
+[02-Sep-2025 14:17:06 UTC] Automatic updates complete.

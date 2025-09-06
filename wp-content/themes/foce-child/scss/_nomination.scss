@@ -1,0 +1,49 @@
+/* template nomination */
+
+.nomination {
+    position: relative;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 80px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem; /* Espace entre le texte et le logo */
+        position: relative;
+    }
+
+    &__text {
+        position: relative;
+        max-width: 800px;
+        text-align: center;
+
+        p {
+            font-size: 42px;
+            color: #fff5e9;
+            font-family: quicksand, sans-serif;
+            z-index: 1; /* Assure que le texte est au-dessus de l'image */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Ombre pour donner un effet de relief */
+            padding: 50px;
+        }
+
+        .nomination__background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%; /* Ajustez la largeur de l'image */
+            height: 100%;
+            z-index: -1; /* Place l'image derrière le texte */
+        }
+    }
+
+    &__logo {
+        img {
+            width: 300px; /* Ajustez la taille du logo */
+            height: auto;
+
+        }
+    }
+}

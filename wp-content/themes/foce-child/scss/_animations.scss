@@ -1,0 +1,564 @@
+/* Animations sur la page entiere*/
+
+.banner img,
+.story,
+.place,
+.site-footer {
+    opacity: 0;
+    transform: translateY($initial-transform);
+    transition: opacity $transition-duration $transition-timing,
+                transform $transition-duration $transition-timing;
+}
+
+.banner img.visible,
+.story.visible,
+.place.visible,
+.site-footer.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+// animation sur la banniere
+
+@keyframes slidedown {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+// animation sur autres sections et footer
+
+@keyframes slideup {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.slide-down {
+  animation: slidedown 1s both;
+}
+
+.slide-up {
+  animation: slideup 1s both;
+}
+
+.banner #logo{
+  opacity: 1;
+  width: 100%;
+}
+
+.flottant{
+  display: block;
+  margin: 0 auto; /* Centrer horizontalement */
+  width: 500px; 
+  animation: slideup-logo 2s ease-in-out, float 3s ease-in-out infinite; /* Ajout de la premiere animation slide-up et ensuite le flottement*/
+  animation-delay: 0s, 2s, 2s; /* La première animation commence immédiatement, la seconde après 2s */
+  position: absolute;
+  z-index: 10;
+}
+
+// animation sur le logo
+
+@keyframes slideup-logo {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+    
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Animation flottante sur le logo
+
+@keyframes float {
+    0% {
+      margin-top: 0;
+  }
+  50% {
+      margin-top: -10px;
+  }
+  100% {
+      margin-top: 0;
+  }
+}
+
+
+
+// vidéo
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh; // Pleine hauteur de la fenêtre
+
+  .background-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+}
+
+
+// Animation fleur
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .fleur {
+    display: inline-block;
+    animation: rotation 5s linear infinite; // Durée : 5s, ajustable
+    width: 100px;
+    height: 100px; 
+  }
+  
+  ul::after {
+    animation: rotation 5s linear infinite;
+  }
+
+  article::after {
+    animation: rotation 5s linear infinite;
+  }
+
+  h2::after {
+    animation: rotation 5s linear infinite; 
+  }
+
+  .studio h2::before{
+    animation: rotation 5s linear infinite; 
+  }
+
+  footer::before {
+    animation: rotation 5s linear infinite; 
+  }
+
+  footer::after {
+    animation: rotation 5s linear infinite;
+  }
+
+
+/* Les titres sont invisibles au départ */
+
+.section-title span {
+  opacity: 0;
+  position: relative;
+  top: 40px;
+  transition: opacity 0.5s ease-out, top 0.5s ease-out;
+}
+
+.section-title span.second-span {
+  transition-delay: 0.5s;
+  top: 0;
+}
+
+.section-title.visible span {
+  opacity: 1;
+  transform: translateY(0);
+  top: 0;
+}
+
+
+.banner .background-video {
+  display: block; /* Par défaut, afficher la vidéo */
+}
+
+
+/* nuages */
+
+#story #place {
+  position: relative;
+  overflow: hidden; /*  évite que les nuages sortent du conteneur */
+  height: 100vh; /* Pleine hauteur de la fenêtre */
+  background-image: url('../assets/images/Studio_Koukaki-image_place.png');
+}
+
+  .cloud {
+      position: absolute;
+      width: 200px;
+      height: 120px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: 1;
+      pointer-events: none; /* Empêche l'interaction avec les nuages */
+      filter: blur(5px); /* intensité du flou */
+
+
+  }
+
+  .cloud-1 {
+      top: 15%;
+      right: -50px; /* Hors de l'écran */
+      background-image: url('../assets/images/little_cloud.png');
+  }
+
+  .cloud-2 {
+      top: 30%;
+      right: 250px; /* Hors de l'écran */
+      background-image: url('../assets/images/big_cloud.png');
+  }
+
+
+// Menu burger
+
+
+.menu-burger-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#menu-burger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.burger-line {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 17px;
+}
+
+.site-title a {
+  text-decoration: none;
+  color: #000; /* Couleur du texte */
+}
+
+/* Lorsque le burger est actif (transformé en croix) */
+#menu-burger.active .burger-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menu-burger.active .burger-line:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-burger.active .burger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/*  Menu  Full Screen*/
+
+#full-screen-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+  background:#FFF5E9;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* menu caché */
+  visibility: hidden; /* masque l'élément */
+  transform: scale(0.95); /* Ajout d'un léger effet de zoom */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* transition fade-in et fade-out */
+}
+
+#full-screen-menu.menu-visible {
+  display: flex;
+  opacity: 1; /* Visible */
+  visibility: visible; /* Permet l'interaction */
+  transform: scale(1); /* Zoom normal */
+}
+
+
+#full-screen-menu.menu-hidden {
+  opacity: 0; /* Caché */
+  visibility: hidden; /* Masque l'interaction */
+}
+
+#full-screen-menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+#full-screen-menu li {
+  margin: 20px 0;
+}
+
+#full-screen-menu a {
+  text-decoration: none;
+  font-size: 64px;
+  color: black;
+  transition: text-shadow 0.3s ease;
+}
+
+#full-screen-menu a:hover {
+  color: black;
+  text-shadow: 0 0 10px #FF5C00, /* Première ombre */
+  0 0 20px #FF5C00; /* Deuxième ombre plus floue */
+
+  transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out; /* Animation fluide */
+}
+
+/* studio koukaki */
+
+.menu-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.menu-footer {
+  text-align: center;
+  max-width: 1440px;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  color: #333;
+  width: 100%;
+}
+
+// effet sur le menu screen
+
+.menu-screen-title {
+  opacity: 0; /*  invisible */
+  transform: translateY(20px); /* Position de départ */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.menu-screen-title.visible {
+  opacity: 1; /* visible */
+  transform: translateY(0); /* Retour à la position initiale */
+}
+
+/* effet sur les fleurs dans le menu screen */
+
+.menu-decorations {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Limite uniquement les décorations */
+  pointer-events: none; /* Désactive les interactions */
+}
+
+/*Keyframes pour la rotation */
+@keyframes rotation-fleurs {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* orchid.png */
+
+.menu-decoration.fleur-screen-1 {
+  position: absolute;
+  top: 10%;
+  left: -5%;
+  animation: rotation-fleurs 10s linear infinite; /* Durée : 10s, mouvement linéaire, boucle infinie */
+}
+
+/* Sunflower.png */
+
+.menu-decoration.fleur-screen-2 {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  width: 250px; /* Ajustez la largeur */
+  height: auto;
+  animation: rotation-fleurs 10s linear infinite;
+}
+
+/* fleur-3.png */
+
+.menu-decoration.fleur-screen-3 {
+  position: absolute;
+  top: 40%;
+  right: -2%;
+  width: 70px;
+  height: auto;
+  animation: rotation-fleurs 10s linear infinite;
+}
+/* fleur-4.png */
+
+.menu-decoration.fleur-screen-4 {
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  width: 100px;
+  height: auto;
+  animation: rotation-fleurs 10s linear infinite;
+}
+
+/* Hibiscus.png */
+
+.menu-decoration.fleur-screen-5 {
+  position: absolute;
+  bottom: -20%;
+  right: -13%;
+  width: 400px;
+  height: auto;
+  animation: rotation-fleurs 10s linear infinite;
+}
+
+
+
+/* Animation de flottement des chats*/
+
+@keyframes flotte-chat {
+  0% {
+      transform: translateY(0); /* Position de départ */
+  }
+  50% {
+      transform: translateY(-10px); /* Déplace légèrement vers le haut */
+  }
+  100% {
+      transform: translateY(0); /* Retour à la position de départ */
+  }
+}
+
+/* Chat orange */
+.menu-decoration.chat-1 {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  animation: flotte-chat 4s ease-in-out infinite; /* Animation continue et fluide */
+}
+
+/* Chat noir */
+
+.menu-decoration.chat-2 {
+  position: absolute;
+  top: 45%;
+  right: 20%;
+  animation: flotte-chat 4s ease-in-out infinite;
+}
+
+/* Chat violet */
+
+.menu-decoration.chat-3 {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  animation: flotte-chat 4s ease-in-out infinite;
+}
+
+/* Logo central */
+
+.menu-decoration.logo-screen {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+// Media queries
+
+@media (max-width: 768px) {
+  .banner .background-video {
+    display: none; /* Masquer la vidéo */
+  }
+
+  .background-image {
+    display: block; // Afficher l'image fallback
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; // Simule le comportement de la vidéo
+}
+
+  .menu-decoration{
+    display: none;
+    animation: none;
+  }
+
+    .nomination {
+      padding: 50px 15px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  
+    .nomination__wrapper {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .nomination__text p {
+      font-size: 1.4rem;
+      line-height: 1.6;
+      margin: 0 auto;
+      max-width: 400px;
+    }
+  
+    .nomination__background {
+      max-width: 700px; /* Réduit la taille du fond */
+    }
+  
+    .nomination__logo img {
+      width: 300px; /* Réduit la taille du logo */
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
